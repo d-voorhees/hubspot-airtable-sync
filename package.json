@@ -1,0 +1,24 @@
+{
+  "name": "hubspot-airtable-sync",
+  "version": "1.0.0",
+  "description": "Two-way sync engine between HubSpot and Airtable",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["hubspot", "airtable", "sync"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@hubspot/api-client": "^13.5.0",
+    "airtable": "^0.12.2",
+    "dotenv": "^17.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
