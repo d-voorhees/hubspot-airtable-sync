@@ -2,7 +2,7 @@
 
 Two-way sync between HubSpot custom objects and Airtable, written in TypeScript. Handles conflict resolution when both sides have changed since the last run, paces writes against Airtable's rate limit, and outputs a per-record audit log every time it runs.
 
-For the reasoning behind the design decisions, the mistakes I made, and the rejected alternatives, see the writeup: [Building a Two-Way HubSpot to Airtable Sync for Custom Objects](https://dvoorhees.com/hubspot-airtable-sync).
+For the reasoning behind the design decisions, the mistakes I made, and the rejected alternatives, see the writeup: [Building a Two-Way HubSpot to Airtable Sync for Custom Objects](https://dvoorhees.com/2026/06/20/building-a-two-way-hubspot-to-airtable-sync-for-custom-objects/).
 
 ## What it does
 
@@ -69,7 +69,7 @@ npm run typecheck
 
 ## What this is
 
-A focused sync engine, deliberately scoped. The full audit log design, the timestamp-based conflict rule, and the adapter isolation are documented choices explained in the [blog post](https://dvoorhees.com/hubspot-airtable-sync).
+A focused sync engine, deliberately scoped. The full audit log design, the timestamp-based conflict rule, and the adapter isolation are documented choices explained in the [blog post](https://dvoorhees.com/2026/06/20/building-a-two-way-hubspot-to-airtable-sync-for-custom-objects/).
 
 Field-level merging within a single conflicting record is out of scope. So is a scheduler or webhook listener. Both are reasonable next steps for a more general-purpose tool. This project's scope is the two things most no-code connectors get wrong: reaching custom objects at full fidelity and resolving conflicts on a defensible rule.
 
